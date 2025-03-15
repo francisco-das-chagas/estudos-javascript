@@ -22,3 +22,13 @@ const filme = {
 
 }
 console.log(livro.nome === nome)
+
+const texto = document.querySelector("p");
+
+console.log(texto.clientHeight)
+
+console.log(autor.toLocaleLowerCase())
+const decimal = 122.99
+
+console.log(Number(decimal.toFixed()) + 3)
+console.log(3)

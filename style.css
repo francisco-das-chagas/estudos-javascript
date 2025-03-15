@@ -13,3 +13,6 @@ body {
   background-color: rgb(32, 32, 32);
   color: #fff;
 }
+.main h1 {
+  margin-bottom: 20px;
+}
