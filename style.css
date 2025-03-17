@@ -13,6 +13,56 @@ body {
   background-color: rgb(32, 32, 32);
   color: #fff;
 }
+.main {
+  width: 400px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .main h1 {
   margin-bottom: 20px;
+  font-size: 56px;
+}
+
+button {
+  border: 1px solid green;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  background-color: rgb(125, 2, 125);
+  transition: 0.2s ease;
+  border: none;
+  color: #fff;
+
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(110, 3, 110);
+}
+
+
+.lista-aulas {
+  font-size: 32px;
+}
+
+.lista-aulas li {
+  padding-bottom: 15px;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #c1c1c1;
 }
