@@ -1,65 +1,39 @@
+// 1 - Crie uma função (livro) que possui 3 parâmetros: nome, ano e autor.
+// 2 - No corpo da função:
+//  2.1 - Transforme o nome para letra maiúscula: toUpperCase()
+//  2.2 - Calcule o total de anos desde o lançamento do livro: 2050 - ano
+//  2.3 - Crie uma variável com a frase: nome + ' por ' + autor;
+//  2.4 - Coloque os 3 valores acima em um objeto.
 
-//           FUNÇÕES
-// As funções (Function) são blocos de código que podem ser executados. 
-// A execução pode acontecer em diferentes cenários e diversas vezes. 
-// Para executar utilizamos os parênteses ();
+// 3 - Retorne (return) o objeto definido.
+// 4 - Execute a função com os seguintes argumentos:
+//     'O Senhor dos Anéis', 1954, 'J. R. R. Tolkien'
+// 5 - Guarde o retorno da função executada em uma variável.
+// 6 - Log a frase final da função executada no console.
 
-function logCursos() {
-  const nome = 'Javascript';
-  const horas = '40 Horas';
-  console.log(nome, horas);
+// function livro(nome, ano, autor) {
+//   const nomeMaior = nome.toUpperCase();
+//   const totalAnos = 2050 - ano;
+//   const frase = nome + " por " + autor;
+
+//   const objeto = {
+//     nome: nomeMaior,
+//     totalAnos,
+//     frase,
+//   };
+//   return objeto;
+// }
+
+// const livroRetorno = livro("A Guerra dos Tronos", 1954, "George R. R. Martin");
+// console.log(livroRetorno.frase)
+
+// CODIGO MENOR
+function livro(nome, ano, autor) {
+  return {
+    nome: nome.toUpperCase(),
+    totalAnos: 2050 - ano,
+    frase: nome + " por " + autor,
+  }
 }
-
-logCursos();
-logCursos();
-logCursos();
-
-// Parâmetro e Argumento
-// Podemos definir parâmetros durante a criação da função. 
-// Durante a execução, podemos passar argumentos ('nome'), 
-// que serão utilizados nos parâmetros.
-
-// nome e horas são os parâmetros
-function logCursos(nome, horas) {;  
-  console.log(nome, horas, 'horas');
-}
-// JavaScript e 40 são os argumentos
-logCursos('javascript', '40');
-logCursos('HTML', '20');
-logCursos('CSS', '30');
-
-// Retorno
-// Toda função retorna um valor (tipo de dado). 
-// Se o retorno não for declarado utilizado a palavra return, 
-// o valor retornado será undefined.
-
-function logCursos(nome) {
-  console.log(nome);
-  return nome + ' Log'
-}
-
-const valor = logCursos('JavaScript');
-console.log(valor)
-
-// Escopo
-// Uma função cria o seu próprio escopo. 
-// Isso significa que variáveis declaradas dentro
-// de uma função, não podem ser acessadas fora das mesmas. 
-// Porém, variáveis criadas fora da função,
-// podem ser acessadas pela mesma.
-const nome = 'JavaScript'
-
-function logCursos() {
-  console.log(nome);
-}
-// Loga JavaScript
-logCursos();
-
-function logLivro() {
-  const livro = 'O Senhor dos Anéis';
-  console.log(livro)
-}
-logLivro();
-
-//Erro, pois a constante livro não existe
-console.log(livro);
+const livroRetorno = livro("A Guerra dos Tronos", 1954, "George R. R. Martin");
+console.log(livroRetorno)
