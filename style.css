@@ -5,7 +5,7 @@
 }
 
 body {
-  padding: 20%;
+  padding-top: 60px;
   font-family: sans-serif;
   display: flex;
   justify-content: center;
@@ -18,12 +18,12 @@ body {
   height: 200px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: left;
 }
 .main h1 {
   margin-bottom: 20px;
-  font-size: 56px;
+  font-size: 40px;
+  color: rgb(226, 226, 5);
 }
 
 button {
@@ -48,7 +48,6 @@ button {
 button:hover {
   background-color: rgb(110, 3, 110);
 }
-
 
 .lista-aulas {
   font-size: 32px;
